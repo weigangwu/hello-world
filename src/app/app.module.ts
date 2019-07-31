@@ -6,8 +6,9 @@ import { AppComponent } from './app.component';
 import { CalendarModule } from 'primeng/calendar';
 import { HomeComponent } from './componments/home/home.component';
 import { FormsModule } from '@angular/forms';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { MatButtonModule, MatCheckboxModule, MatSliderModule, MatSlideToggleModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -20,8 +21,18 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
     CalendarModule,
     FormsModule,
     BrowserAnimationsModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NoopAnimationsModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    MatSliderModule,
+    MatSlideToggleModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatNativeDateModule,
+    MatDatepickerModule
   ],
+  // exports: [MatButtonModule, MatCheckboxModule, MatSliderModule],
   providers: [],
   bootstrap: [AppComponent]
 })
