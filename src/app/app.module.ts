@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { MatButtonModule, MatCheckboxModule, MatSliderModule, MatSlideToggleModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { MatButtonModule, MatCheckboxModule, MatSliderModule, MatSlideToggleModu
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
-    MatDatepickerModule
+    MatDatepickerModule,
+    HttpClientModule
   ],
   // exports: [MatButtonModule, MatCheckboxModule, MatSliderModule],
   providers: [],
