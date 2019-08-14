@@ -4,12 +4,16 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CalendarModule } from 'primeng/calendar';
+import { AutoCompleteModule } from 'primeng/primeng';
 import { HomeComponent } from './componments/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule, NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
-import { MatButtonModule, MatCheckboxModule, MatSliderModule, MatSlideToggleModule, MatFormFieldModule, MatInputModule, MatDatepickerModule, MatNativeDateModule } from '@angular/material';
-import {HttpClientModule} from '@angular/common/http';
+import {
+  MatButtonModule, MatCheckboxModule, MatSliderModule, MatSlideToggleModule, MatFormFieldModule, MatInputModule, MatDatepickerModule,
+  MatNativeDateModule
+} from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -32,7 +36,8 @@ import {HttpClientModule} from '@angular/common/http';
     MatInputModule,
     MatNativeDateModule,
     MatDatepickerModule,
-    HttpClientModule
+    HttpClientModule,
+    AutoCompleteModule
   ],
   // exports: [MatButtonModule, MatCheckboxModule, MatSliderModule],
   providers: [],

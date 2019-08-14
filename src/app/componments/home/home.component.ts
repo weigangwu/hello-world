@@ -14,6 +14,11 @@ export class HomeComponent implements OnInit {
 
   source: any[];
 
+  text: string;
+
+  results: string[];
+  filter: string[];
+
   constructor(private testService: TestService) { }
 
   ngOnInit() {
@@ -30,5 +35,12 @@ export class HomeComponent implements OnInit {
     this.testService.getReleases().subscribe(data => {
       console.log(data);
     });
+    this.results = ['aaaa', 'dDD', 'vQQ', 'dFF'];
+    this.filter = this.results.slice();
   }
+
+  search(event) {
+    this.filter = this.results.filter(item => item.indexOf(event.query) > -1);
+  }
+
 }
